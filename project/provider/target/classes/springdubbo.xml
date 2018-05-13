@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="
+
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://code.alibabatech.com/schema/dubbo        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+    <!--扫描注解 -->
+    <context:component-scan base-package="com.nkber"/>
+
+    <dubbo:application name="provider"/>
+
+    <!--cxfrest 协议支持-->
+    <!--<dubbo:protocol name="cxfrest" port="18080" contextpath="provider"
+                    extension="com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider,
+                    org.apache.cxf.jaxrs.validation.JAXRSBeanValidationFeature,
+                    org.apache.cxf.jaxrs.swagger.Swagger2Feature,
+                    org.apache.cxf.jaxrs.validation.ValidationExceptionMapper
+                    com.tops001.foundation.framework.web.cxf.provider.ApiOriginFilter,
+    				com.tops001.foundation.framework.web.cxf.provider.ExceptionHandler,
+    				com.tops001.nkber.server.tool.jaxrs.filter.AuthenticationFilter,
+    				com.tops001.foundation.framework.web.cxf.provider.UserContextProvider,
+					com.tops001.foundation.log4j.cxf.CxfThreadContextFilter,
+        			com.tops001.foundation.log4j.cxf.LoggingInFilter,
+        			com.tops001.foundation.log4j.cxf.LoggingOutFilter,
+                    com.tops001.foundation.framework.web.cxf.provider.OptionalParamConverterProvider"/>
+    <dubbo:protocol name="dubbo" port="28080"/>-->
+
+    <dubbo:registry address="zookeeper://localhost:2181"/>
+
+
+
+    <dubbo:service interface="com.nkber.SayHi" ref="sayHi"/>
+
+</beans>

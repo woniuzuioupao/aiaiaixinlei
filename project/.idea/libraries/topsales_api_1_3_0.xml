@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="topsales-api-1.3.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../jar/topsales-api-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/validation-api-2.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/tops-user-api-2.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/tops-user-open-api-2.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-annotations-1.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-core-1.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-jaxrs-1.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-models-1.5.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../jar/topsales-api-1.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/validation-api-2.0.0.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/tops-user-open-api-2.5.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-annotations-1.5.9-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-core-1.5.9-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-jaxrs-1.5.9-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jar/swagger-models-1.5.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

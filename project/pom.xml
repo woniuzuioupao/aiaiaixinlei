@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.nkber</groupId>
+    <artifactId>nkber</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>provider</module>
+        <module>consumer</module>
+        <module>api</module>
+    </modules>
+
+    <properties>
+        <!-- topstech version manager -->
+        <tops.bom.version>1.1.7</tops.bom.version>
+        <foundation.order.version>1.0.3</foundation.order.version>
+        <foundation.search.version>1.0.12</foundation.search.version>
+        <foundation.customer-center.version>1.0.6</foundation.customer-center.version>
+        <foundation.postman.version>2.2.2</foundation.postman.version>
+        <foundation.building-center.version>1.0.2</foundation.building-center.version>
+        <foundation.organization.version>4.1.17</foundation.organization.version>
+        <foundation.log4jstarter.version>1.1.12</foundation.log4jstarter.version>
+        <foundation.framework.version>1.2.4</foundation.framework.version>
+        <foundation.nj-bridge-api.version>1.0.2</foundation.nj-bridge-api.version>
+        <foundation.user-center.version>2.5.2</foundation.user-center.version>
+        <foundation.article.version>1.0.3</foundation.article.version>
+    </properties>
+
+    <dependencies>
+
+       <!-- <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-core</artifactId>
+            <version>1.5.9</version>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-jaxrs</artifactId>
+            <version>1.5.9</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.ws.rs</groupId>
+                    <artifactId>jsr311-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        &lt;!&ndash;【废弃！只有自己站点要打swagger ui使用】 &ndash;&gt;
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>swagger-ui</artifactId>
+            <version>2.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.2.2.Final</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-rpc-rest-cxf</artifactId>
+            <version>1.1.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.45</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.5.3-beta</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.8.4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.1</version>
+        </dependency>
+
+
+
+
+
+        <dependency>
+            <groupId>com.tops001</groupId>
+            <artifactId>tops-bom</artifactId>
+            <version>${tops.bom.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!-- api层依赖 -->
+        <dependency>
+            <groupId>com.tops001</groupId>
+            <artifactId>api-integration</artifactId>
+            <version>${tops.bom.version}</version>
+        </dependency>
+
+        <!--artcle-->
+        <dependency>
+            <groupId>com.tops001</groupId>
+            <artifactId>article-library-api</artifactId>
+            <version>${foundation.article.version}</version>
+        </dependency>
+
+        <!-- dao层依赖 -->
+        <dependency>
+            <groupId>com.tops001</groupId>
+            <artifactId>dao-integration</artifactId>
+            <version>${tops.bom.version}</version>
+        </dependency>
+
+        <!-- biz层依赖 -->
+     <!--   <dependency>
+            <groupId>com.tops001</groupId>
+            <artifactId>service-integration</artifactId>
+            <version>${tops.bom.version}</version>
+        </dependency>-->
+
+        <!-- web层依赖 -->
+        <dependency>
+            <groupId>com.tops001</groupId>
+            <artifactId>web-integration</artifactId>
+            <version>${tops.bom.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.njbridge</groupId>
+            <artifactId>nj-bridge-api</artifactId>
+            <version>${foundation.nj-bridge-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.foundation</groupId>
+            <artifactId>customer-center-api</artifactId>
+            <version>${foundation.customer-center.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.foundation.building</groupId>
+            <artifactId>building-center-api</artifactId>
+            <version>${foundation.building-center.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.Postman</groupId>
+            <artifactId>Postman-API</artifactId>
+            <version>${foundation.postman.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.foundation.topsuser</groupId>
+            <artifactId>tops-user-open-api</artifactId>
+            <version>${foundation.user-center.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.order</groupId>
+            <artifactId>order-api</artifactId>
+            <version>${foundation.order.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.search</groupId>
+            <artifactId>search-api</artifactId>
+            <version>${foundation.search.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.foundation</groupId>
+            <artifactId>organization-api</artifactId>
+            <version>${foundation.organization.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tops001.foundation</groupId>
+            <artifactId>log4j-starter</artifactId>
+            <version>${foundation.log4jstarter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
